@@ -1,23 +1,29 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   {% include 'header.html' %}
 </head>
 <body>
-
-<style> 
+<style>
   {% include 'css/staple.css' %}
 </style>
-
-<div id="main-container" style="height: 90%;">
+<script>
+  {% include 'js/staple.js' %}
+</script>
+  <div id="main-container" style="height: 85%;">
   {% include 'navbar.html' %}
-	<div class="jumbotron" style="margin: 15px; height: 100%;">
-    <h1 class="display-4">Hello, world!</h1>
-    <p class="lead">This is a simple flask skeleton! Put your code in and have fun.</p>
+	<div class="jumbotron">
+    <div class="strings-container">
+      <input type="button" value="E" onclick="playAudio('http://guitarcareplayingtips.com/tuner_6Ebass.MP3')">
+      <input type="button" value="A" onclick="playAudio('http://guitarcareplayingtips.com/tuner_5A.MP3')">
+      <input type="button" value="D" onclick="playAudio('http://guitarcareplayingtips.com/tuner_4D.MP3')">
+      <input type="button" value="G" onclick="playAudio('http://guitarcareplayingtips.com/tuner_3G.MP3')">
+      <input type="button" value="B" onclick="playAudio('http://guitarcareplayingtips.com/tuner_2B.MP3')">
+      <input type="button" value="E" onclick="playAudio('http://guitarcareplayingtips.com/tuner_1e.MP3')">
+    </div>
   </div>
-
   {% include 'footer.html' %}
 </div><!--#main-container -->
 </body>
 </html>
-

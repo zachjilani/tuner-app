@@ -4,14 +4,27 @@ html{
   height: 100%;
 }
 
-body{
+.jumbotron {
+  margin: 15px;
+  height: 100%;
+  background-image: url('https://www.musikalessons.com/blog/wp-content/uploads/2016/04/guitar-strings.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25% 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #36393E;
   font-family: 'Ubuntu', sans-serif;
   height: 100%;
   display: flex;
   flex-flow: column;
 }
 
-.footer{
+.footer {
   width: 100%;
   background-color: #36393E;
   color: white;
@@ -20,10 +33,6 @@ body{
   line-height: 30px;
 }
 
-.muted{
-  color: #6c757d;
-}
-
-.ubuntuFont{
-  font-family: 'Ubuntu', sans-serif;
+.strings-container {
+  display: center;
 }
