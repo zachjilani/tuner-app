@@ -9,18 +9,20 @@
   {% include 'css/staple.css' %}
 </style>
 <script>
-  {% include 'js/staple.js' %}
+  function playAudio(url){
+    new Audio(url).play();
+  }
 </script>
   <div id="main-container" style="height: 85%;">
   {% include 'navbar.html' %}
 	<div class="jumbotron">
     <div class="strings-container">
-      <input type="button" value="E" onclick="playAudio('http://guitarcareplayingtips.com/tuner_6Ebass.MP3')">
-      <input type="button" value="A" onclick="playAudio('http://guitarcareplayingtips.com/tuner_5A.MP3')">
-      <input type="button" value="D" onclick="playAudio('http://guitarcareplayingtips.com/tuner_4D.MP3')">
-      <input type="button" value="G" onclick="playAudio('http://guitarcareplayingtips.com/tuner_3G.MP3')">
-      <input type="button" value="B" onclick="playAudio('http://guitarcareplayingtips.com/tuner_2B.MP3')">
-      <input type="button" value="E" onclick="playAudio('http://guitarcareplayingtips.com/tuner_1e.MP3')">
+      <input type="button" value="E" style="cursor: pointer;" onclick="playAudio('http://guitarcareplayingtips.com/tuner_6Ebass.MP3')">
+      <input type="button" value="A" style="cursor: pointer;" onclick="playAudio('http://guitarcareplayingtips.com/tuner_5A.MP3')">
+      <input type="button" value="D" style="cursor: pointer;" onclick="playAudio('http://guitarcareplayingtips.com/tuner_4D.MP3')">
+      <input type="button" value="G" style="cursor: pointer;" onclick="playAudio('http://guitarcareplayingtips.com/tuner_3G.MP3')">
+      <input type="button" value="B" style="cursor: pointer;" onclick="playAudio('http://guitarcareplayingtips.com/tuner_2B.MP3')">
+      <input type="button" value="E" style="cursor: pointer;" onclick="playAudio('http://guitarcareplayingtips.com/tuner_1e.MP3')">
     </div>
   </div>
   {% include 'footer.html' %}
